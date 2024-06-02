@@ -1,0 +1,252 @@
+.Footer_about{
+    font-family: Chopin;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 190%;
+    padding-top: 1%;
+}
+.text_footer_about{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.copyright_about{
+    font-size: 0.8em;
+}
+.about_1{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    
+}
+.titlu_why{
+    display: flex;
+    flex-direction: column;
+    font-family: Chopin;
+    font-size: 2em;
+    position: absolute;
+    width: fit-content;
+    justify-content: center;
+    top:13%;
+    font-weight: bold;
+}
+.text_why{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Chopin;
+    font-size: 1.2em;
+    position: absolute;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    top:25%;
+    padding: 5%;
+    border-radius: 2%;
+    
+}
+
+.text_why p{
+    padding-bottom: 1%;
+}
+.titlu_where{
+    display: flex;
+    flex-direction: column;
+    font-family: Chopin;
+    font-size: 2em;
+    position: absolute;
+    width: fit-content;
+    justify-content: center;
+    top:95%;
+    font-weight: bold;
+}
+.where{
+    font-family: Chopin;
+    width: 70%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top:110%;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+.text_where{
+    width: 25%;
+    text-align: justify;
+    font-weight: bold;
+
+    
+}
+.line_where{
+    display: flex;
+    position: absolute;
+    background-color:rgba(113, 113, 113, 0.686);
+    padding: 1px;
+    height: 90%;
+}
+.location_info{
+    width: 25%;
+    font-weight: bold;
+    
+}
+
+@media (max-width:480px) {
+    .montserrat{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        
+      }
+    .TopMenu{
+        font-family: montserrat;
+        font-size: 1vw;
+        color: black;
+        position:absolute;
+        display: flex;
+        width:fit-content;
+       
+      
+    }
+    .TopMenu l a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.9em;
+        
+    }
+    .overview_1{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 3em;
+        font-family: montserrat;
+    }
+    .overview_1_Text{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 0.8em;
+        position: absolute;
+        width: fit-content;
+       
+    }
+    .about_1{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        
+    }
+    .titlu_why{
+        display: flex;
+        flex-direction: column;
+        font-family: montserrat;
+        font-size: 1.8em;
+        position: absolute;
+        width: fit-content;
+        justify-content: center;
+        top:13%;
+        font-weight: 450;
+    }
+    .text_why{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        font-family: montserrat;
+        font-size: 1em;
+        font-weight: 250;
+        position: absolute;
+        width: 70%;
+        justify-content: center;
+        text-align: justify;
+        top:25%;
+        padding: 5%;
+        border-radius: 2%;
+        
+    }
+    .titlu_where{
+        display: flex;
+        flex-direction: column;
+        font-family: montserrat;
+        font-size: 1.8em;
+        position: absolute;
+        width: fit-content;
+        justify-content: center;
+        align-self: center;
+        top:120%;
+        font-weight: 450;
+    }
+    .where{
+        font-family: montserrat;
+        width: 70%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:90% ;
+        top:130%;
+        background-color: white;
+        border-radius: 10px;
+     
+    
+    }
+    .text_where{
+        width: 80%;
+        text-align: justify;
+        font-weight: 250;
+    
+        
+    }
+    .line_where{
+        display: flex;
+        position: relative;
+        background-color:rgba(113, 113, 113, 0.686);
+        height: 1px;
+        width: 50%;
+        
+    }
+    .location_info{
+        width: 80%;
+        position: relative;
+        font-weight: 450;
+        
+    }
+
+    .Footer_about{
+        font-family: montserrat;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        height: 10%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 240%;
+        padding-top: 1%;
+    }
+    .text_footer_about{
+        font-size: 1em;
+        
+    }
+    .copyright_about{
+        font-size: 0.5em;
+    }
+}

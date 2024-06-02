@@ -1,0 +1,305 @@
+.offers_1{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+}
+.titlu_offers{
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    font-family: Chopin;
+    font-size: 2em;
+    top:10%;
+}
+.acc_ALL{
+    display: flex;
+    justify-content: center;
+    
+}
+.accomodation{
+    display: flex;
+    width: 90%;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    top:50%;
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 15px;
+}
+.poza_fundal_acc{
+    display: flex;
+    width: 30%;
+    opacity:0.7;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text_poza{
+    font-family: Chopin;
+    font-size: 2.5em;
+    font-weight:950;
+    position: absolute;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    
+}
+.line_acc{
+    padding-right: 1px;
+    position: absolute;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.353);
+}
+.text_acc{
+    font-family: Chopin;
+    font-size: 0.6em;
+    width: 30%;
+    text-align: justify;
+}
+.text_acc li{
+    font-size: 1.5em;
+}
+.linie_mijloc{
+    padding-top: 1px;
+    position: absolute;
+    width: 10%;
+    background-color: rgba(0, 0, 0, 0.358);
+    top:115%;
+}
+.food_ALL{
+    display: flex;
+    justify-content: center;
+}
+.food{
+    display: flex;
+    width: 90%;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    top:125%;
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 15px;
+}
+.food_text{
+    display: flex;
+    width: 30%;
+    text-align: justify;
+    font-size: 1.2em;
+    font-family: Chopin;
+    font-weight: bold;
+    position: relative;
+    
+}
+.food_linie{
+    padding-right: 1px;
+    position: absolute;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.353);
+}
+.poza_food{
+    display: flex;
+    width: 35%;
+    opacity:0.6;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.text_poza_food{
+    font-family: Chopin;
+    font-size: 2.5em;
+    font-weight:990;
+    position: absolute;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    
+}
+.Footer_offers{
+    font-family: Chopin;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 190%;
+    padding-top: 1%;
+}
+.text_footer{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.copyright{
+    font-size: 0.8em;
+}
+@media (max-width:480px){
+    .montserrat{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        
+      }
+      .TopMenu{
+        font-family: montserrat;
+        font-size: 1vw;
+        color: black;
+        position:absolute;
+        display: flex;
+        width:fit-content;
+    }
+    .TopMenu l a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.9em;
+        
+    }
+    .offers_1{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+    }
+    .titlu_offers{
+        display: flex;
+        position: absolute;
+        width: fit-content;
+        font-family: montserrat;
+        font-size: 1.8em;
+        top:10%;
+    }
+    .accomodation{
+        display: flex;
+
+      
+        flex-direction: column;
+        width: 90%;
+        position: absolute;
+        align-items: center;
+        top:30%;
+        background-color: white;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 15px;
+    }
+    .poza_fundal_acc{
+        display: flex;
+        width: 90%;
+        opacity:0.7;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .text_poza{
+        font: montserrat;
+        font-size: 2em;
+        
+        position: absolute;
+        width: fit-content;
+        color: rgb(255, 255, 255);
+        
+    }
+    .line_acc{
+        height:  1px;
+        position: absolute;
+        display: none;
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.353);
+    }
+    .text_acc{
+        font: montserrat;
+        font-size: 0.5em;
+        width: 80%;
+        text-align: justify;
+    }
+    .text_acc li{
+        font-size: 1.5em;
+    }
+    .linie_mijloc{
+        padding-top: 1px;
+        position: absolute;
+        width: 1px;
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.358);
+        top:130%;
+    }
+    .food{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        position: absolute;
+        align-items: center;
+        justify-content: space-evenly;
+        top:140%;
+        height: 65%;
+        background-color: white;
+        border-radius: 15px;
+    }
+    .food_text{
+        display: flex;
+        width: 80%;
+        text-align: justify;
+        font-size: 1em;
+        font-family: Chopin;
+        font-weight: bold;
+        position: relative;
+        
+    }
+    .food_linie{
+        padding-right: 1px;
+        position: absolute;
+        display: none;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.353);
+    }
+    .poza_food{
+        display: flex;
+        width: 90%;
+        opacity:0.6;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .text_poza_food{
+        font: montserrat;
+        font-size: 2.5em;
+        font-weight:990;
+        position: absolute;
+        text-align: center;
+        width: fit-content;
+        color: rgb(255, 255, 255);
+        
+    }
+    .Footer_offers{
+        font-family: montserrat;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        height: 10%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 220%;
+        padding-top: 1%;
+    }
+    .text_footer{
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .copyright{
+        font-size: 0.5em;
+    }
+}

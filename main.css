@@ -1,0 +1,440 @@
+@font-face {
+    font-family: Chopin;
+    src: url(Fonts/Chopin-Light.ttf);
+}
+/* .loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: opacity 2s, visibility 2s;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: " ";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: rgb(121, 78, 0);
+    border-radius: 50%;
+    animation: loading 2s ease infinite;
+} */
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+.header{
+    height: fit-content;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+}
+.PozaLogo{
+    display: flex;
+    padding-top: 0%;
+    padding-left: 1%;
+    width: fit-content;
+    position:relative;
+    left: 3%;
+}
+.PrimaPoza{
+    opacity: 80%;
+  justify-content: center;
+  display: flex;
+}
+.TextPoza{
+    color: white;
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    top:35%;
+    font-size: 2vw;
+    font-family: Chopin;
+}
+.TopMenu{
+    font-family: Chopin;
+    font-weight: bolder;
+    font-size: 1vw;
+    color: black;
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    left:28%;
+  
+}
+
+.TopMenu l a{
+    margin-right: 5vw;
+    color: black;
+    text-decoration: none;
+}
+
+.LoogoMM{
+    display: flex;
+    position: relative;
+    width: fit-content;
+}
+.overview_1{
+    display: flex;
+  
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 5em;
+}
+.overview_1_Text{
+    display: flex;
+    flex-direction: column;
+    font-family: Chopin;
+    font-size: 1.5em;
+    position: absolute;
+    top:100%;
+}
+.line{
+    position:absolute;
+    width: 50px;
+    height: 1px;
+    background-color: rgb(99, 99, 99);
+    top: 350%;
+}
+.Text2_overview{
+    font-family: Chopin;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    width: 50%;
+    top:400%;
+    text-align:center;
+}
+
+.overview_2{
+    display: flex;
+    position:absolute;
+    height: fit-content;
+    width: 100%;
+    top:160%;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+.poza_traditie{
+    border-radius: 20px;
+    width: 35%;
+    margin-left: 2%;
+}
+.Text_Traditie{
+    font-family: Chopin;
+    width: 35%;
+}
+.Text_Traditie h{
+    font-size: 2.3em;
+}
+.Text_Traditie p{
+    text-align: justify;
+    font-size: 1.3em;
+}
+.overview_3{
+    display: flex;
+    position:absolute;
+    height: fit-content;
+    width: 100%;
+    top:220%;
+    justify-content: space-around;
+    align-items: center;
+}
+.Text_Modern{
+    font-family: Chopin;
+    width: 35%;
+    margin-left: 2%;
+}
+.Text_Modern h{
+    font-size: 2.3em;
+    display: flex;
+    justify-content: flex-end;
+}
+.Text_Modern p{
+    text-align: justify;
+    font-size: 1.3em;
+}
+.poza_modern{
+    border-radius: 20px;
+    width: 35%;
+}
+.Footer{
+    font-family: Chopin;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 290%;
+    padding-top: 1%;
+}
+.text_footer{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.copyright{
+    font-size: 0.8em;
+}
+body{
+    animation: transitionIn 2s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+.nav-link{
+    transition: all 0.1s;
+}
+
+.nav-link:hover{
+    /*text-decoration: underline rgb(109, 60, 8);*/
+    border-bottom: 2px solid rgb(109, 60, 8);
+}
+
+
+
+@media (max-width:430px) {
+    .turnDeviceNotification {
+        background-image:url('../poze/mobile_rotate.jpeg');
+        background-size:cover;
+      }
+    .turnDeviceNotification {
+        position:fixed;
+        top: 0;
+        left:0;
+        height:100%;
+        width:100%;
+        display: none;
+      }
+    .montserrat{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        
+      }
+
+    .header{
+        height: fit-content;
+        background-color: white;
+        align-items: center;
+        display: flex;
+        width: 100%;
+    
+    }
+    .PrimaPoza{
+        opacity: 80%;
+      justify-content: center;
+      width: 100%;
+      display: flex;
+    }
+    .PozaLogo{
+        display: flex;
+        padding-top: 0%;
+        padding-left: 1%;
+        width: fit-content;
+        
+        left: 3%;
+    }
+    .TopMenu{
+        font-family: montserrat;
+        font-size: 1vw;
+        color: black;
+        position:absolute;
+        display: flex;
+        width:fit-content;
+       
+      
+    }
+    .TopMenu l a{
+        color: black;
+        text-decoration: none;
+        font-size: 0.7em;
+        
+    }
+    .PozaLogo{
+        display: flex;
+        width: 90%;
+        position:relative;
+        left: 1%;
+    }
+    .TextPoza{
+font:  montserrat;        
+color: white;
+        width: fit-content;
+        display: flex;
+        position: absolute;
+        font-size: 4vw;
+        font-weight: lighter;
+        top:8%;
+    }
+    .TopMenu{
+        font-family: montserrat;
+        font-weight: 350;
+        font-size: 2.4vw;
+        color: black;
+        position:absolute;
+        display: flex;
+        flex-direction: row;
+        width:fit-content;
+        left:15%;
+      
+    }
+    .overview_1{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 3em;
+        font-family: montserrat;
+    }
+    .overview_1_Text{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 0.8em;
+        position: absolute;
+        width: fit-content;
+       
+    }
+    .line{
+        position:absolute;
+        width: 50px;
+        height: 1px;
+        background-color: rgb(99, 99, 99);
+        top: 200%;
+    }
+    .Text2_overview{
+        font-family: montserrat;
+        font-weight: 250;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        width: 75%;
+        top:200%;
+        text-align:justify;
+    }
+    .overview_2{
+        display: flex;
+        font-weight: bolder;
+        flex-direction: column;
+        position:absolute;
+        height: fit-content;
+        width: 100%;
+        top:100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .poza_traditie{
+        border-radius: 10px;
+        width: 80%;
+        order: 1;
+    }
+    .Text_Traditie{
+        font-family: montserrat;
+        width: 80%;
+        text-align: center;
+        
+    }
+    .Text_Traditie h{
+        font-size: 2.3em;
+        font-weight: lighter;
+    }
+    .Text_Traditie p{
+        text-align: justify;
+        font-size: 1em;
+        font-weight: 250;
+    }
+    .overview_3{
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        height: fit-content;
+        width: 100%;
+        top:190%;
+        align-items: center;
+        justify-content: center;
+    }
+    .Text_Modern{
+        
+        width: 80%;
+        text-align: center;
+    }
+    .Text_Modern h{
+        font-family: montserrat;
+        font-size: 2.3em;
+        display: flex;
+        justify-content: center;
+       
+        
+    }
+    .Text_Modern p{
+        text-align: justify;
+        font-size: 1em;
+        font-family: montserrat;
+        font-weight: 250;
+    }
+    .poza_modern{
+        border-radius: 10px;
+        width: 80%;
+    }
+    .Footer{
+        font-family: montserrat;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        height: 10%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 270%;
+        padding-top: 1%;
+    }
+    .text_footer{
+        font-weight: 450;
+        text-align: center;
+        font-size: 1em;
+        
+    }
+    .copyright{
+        font-size: 0.5em;
+    }
+    body{
+        animation: transitionIn 0.75s;
+    }
+
+} 
+

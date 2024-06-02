@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Poze /favICON.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="Poze /favICON.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Mosului</title>
+    <script src="actions.js"></script>
+</head>
+<style>
+    body{
+        background-color:rgb(255, 249, 242);
+        margin: 0;
+    }
+</style>
+<body>
+
+    
+        <div class="header">
+            <div class="PozaLogo">
+                <a href="index.html">
+            <img src="Poze/LogoTaglineBlack.png" width="15%">
+        </a>
+        </div>
+<div class="TopMenu">
+    <div id="highlight"></div>
+    <div class="Overview">
+        <ul>
+            <l><a class="nav-link" href="index.html" >Overview</a></l>
+            <l><a class="nav-link" href="about.html" >About</a></l>
+            <l><a class="nav-link" href="gallery.html" >Gallery</a></l>
+            <l><a class="nav-link" href="offers.html" >Offers and Packages</a></l>
+            <l><a class="nav-link" href="contact.html" >Contact</a></l>
+        </ul>
+    </div>
+</div>
+
+</div>
+
+<div class="Titlu_galerie">
+    <div class="text">
+    <h>Take a look at your next holiday's accomodation</h></div>
+    <div class="lineG">
+    </div>
+</div>
+<div class="full-img" id="fullImgBox">
+    <img src="PozeGalerie/poza_ext_1.jpeg" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+</div>
+
+
+<div class="img-gallery">
+    <img src="PozeGalerie/poza_ext_1.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_ext_2.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_ext_3.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_ext_4.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_ext_5.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_ext_6.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_1.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_2.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_3.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_4.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_5.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_6.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_7.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_8.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_9.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_10.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_11.jpeg" onclick="openFullImg(this.src)">
+    <img src="PozeGalerie/poza_int_12.jpeg" onclick="openFullImg(this.src)">
+</div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+<footer class="Footer_galerie">
+    <div class="text_foote_galerie">
+        <h>We can't wait to have you as our guests!</h>
+    </div>
+    <div class="copyright_galerie">
+        <p>Casa Mosului © 2024 - All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
