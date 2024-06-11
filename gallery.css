@@ -157,7 +157,7 @@
         height: 10%;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        bottom: auto;
         top: 170%;
         padding-top: 1%;
     }
