@@ -78,7 +78,7 @@
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     top:160%;
     background-color: white;
     border-radius: 10px;
@@ -107,7 +107,7 @@
 }
 .map {
     width: 40%;
-    height: 50%;
+    height: 40%;
 }
 @media (max-width:480px) {
     .montserrat{
