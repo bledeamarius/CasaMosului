@@ -1,34 +1,42 @@
-const images = document.querySelectorAll('.img-gallery img');
-let currentIndex = 0;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function openFullImg(index) {
-    currentIndex = index;
-    const modal = document.getElementById('fullImgModal');
-    const fullImg = document.getElementById('fullImg');
-    fullImg.src = images[currentIndex].src;
-    modal.style.display = 'flex';
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  // Center the full-size image
+  document.getElementById("fullImg").classList.add("centered-image");
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
 function closeFullImg() {
-    const modal = document.getElementById('fullImgModal');
-    modal.style.display = 'none';
+    document.getElementById("fullImgBox").style.display = "none";
+    // ... other code ...
+
+    // Remove the centering class
+    document.getElementById("fullImg").classList.remove("centered-image");
 }
 
-function nextImg() {
-    currentIndex = (currentIndex + 1) % images.length;
-    const fullImg = document.getElementById('fullImg');
-    fullImg.src = images[currentIndex].src;
-}
 
-function prevImg() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    const fullImg = document.getElementById('fullImg');
-    fullImg.src = images[currentIndex].src;
-}
-
-document.addEventListener('click', (e) => {
-    const modal = document.getElementById('fullImgModal');
-    if (e.target === modal) {
-        closeFullImg();
-    }
-});
