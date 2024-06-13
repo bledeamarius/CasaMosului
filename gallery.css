@@ -14,11 +14,12 @@
     width: fit-content;
 }
 .lineG{
-    position:absolute;
+    position:relative;
     width: 100px;
     height: 2px;
     background-color: rgb(99, 99, 99);
     top: 200%;
+    margin-bottom: 4%;
 }
 .img-gallery{
     width: 80%;
