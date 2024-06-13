@@ -60,7 +60,7 @@ form button{
     display: flex;
     justify-content: center;
     position: absolute;
-    top:125%;
+    top:105%;
 }
 .metode_contact{
     display: flex;
@@ -69,7 +69,7 @@ form button{
     width: 100%;
     position: absolute;
     font-family: Chopin;
-    top:135%;
+    top:115%;
     
 }
 .linie_contact{
@@ -89,7 +89,7 @@ form button{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 310%;
+    top: 130%;
     padding-top: 1%;
 }
 .text_footer{
