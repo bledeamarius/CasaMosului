@@ -5,6 +5,8 @@
     width: 100%;
     height: 100%;
     top: 20%;
+    flex-direction: column;
+    align-items: center;
 }
 .titlu_offers{
     display: flex;
@@ -17,6 +19,7 @@
 .acc_ALL{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     
 }
 body {
@@ -136,8 +139,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 1%;
-    position: absolute;
-    top: 130%;
+    position: relative;
+    
 }
 .text_footer{
     font-size: 1.3em;
@@ -170,14 +173,14 @@ body {
     .offers_1{
         display: flex;
         justify-content: center;
-        /* position: absolute; */
+        position: relative;
         width: 100%;
         height: 100%;
         top: 10%;
     }
     .titlu_offers{
         display: flex;
-        position: absolute;
+        position: relative;
         width: fit-content;
         font-family: montserrat;
         font-size: 1.8em;
@@ -189,7 +192,7 @@ body {
       
         flex-direction: column;
         width: 90%;
-        position: absolute;
+        position: relative;
         align-items: center;
         top:30%;
         background-color: white;
@@ -210,14 +213,14 @@ body {
         font: montserrat;
         font-size: 2em;
         
-        position: absolute;
+        position: relative;
         width: fit-content;
         color: rgb(255, 255, 255);
         
     }
     .line_acc{
         height:  1px;
-        position: absolute;
+        position: relative;
         display: none;
         width: 90%;
         background-color: rgba(0, 0, 0, 0.353);
@@ -233,7 +236,7 @@ body {
     }
     .linie_mijloc{
         padding-top: 1px;
-        position: absolute;
+        position: relative;
         width: 1px;
         width: 60%;
         background-color: rgba(0, 0, 0, 0.358);
@@ -243,7 +246,7 @@ body {
         display: flex;
         flex-direction: column-reverse;
         width: 90%;
-        position: absolute;
+        position: relative;
         align-items: center;
         justify-content: space-evenly;
         top:140%;
@@ -263,7 +266,7 @@ body {
     }
     .food_linie{
         padding-right: 1px;
-        position: absolute;
+        position: relative;
         display: none;
         height: 90%;
         background-color: rgba(0, 0, 0, 0.353);
@@ -281,7 +284,7 @@ body {
         font: montserrat;
         font-size: 2.5em;
         font-weight:990;
-        position: absolute;
+        position: relative;
         text-align: center;
         width: fit-content;
         color: rgb(255, 255, 255);
@@ -289,15 +292,7 @@ body {
     }
     .Footer_offers{
         font-family: montserrat;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-        height: 10%;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding-top: 1%;
+       
     }
     .text_footer{
         font-size: 1em;

@@ -125,11 +125,11 @@
     }
     .Titlu_galerie{
         font-family: montserrat;
-        font-size: 1.8em;
+        font-size: 1.1em;
         font-weight: bold;
-        display: none;
+        display: flex;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -154,15 +154,8 @@
     }
     .Footer_galerie{
         font-family: montserrat;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-        height: 10%;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1%;
-        position: relative;
+        bottom: 0;
+      
     }
     .text_footer_galerie{
         font-size: 1em;
@@ -176,7 +169,7 @@
         
     }
     .full-img span{
-        position: absolute;
+        position: relative;
         top: 5%;
         right: 5%;
         font-family: sans-serif;
