@@ -2,31 +2,6 @@
     font-family: Chopin;
     src: url(Fonts/Chopin-Light.ttf);
 }
-/* .loader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    transition: opacity 2s, visibility 2s;
-}
-.loader-hidden{
-    opacity: 0;
-    visibility: hidden;
-}
-.loader::after{
-    content: " ";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #dddddd;
-    border-top-color: rgb(121, 78, 0);
-    border-radius: 50%;
-    animation: loading 2s ease infinite;
-} */
 @keyframes loading{
     from{
         transform: rotate(0turn);
@@ -229,8 +204,12 @@ body{
 }
 
 
-
-@media (max-width:430px) {
+@media (max-width:100px) {
+    .PrimaPoza {
+        height: 200px;
+    }
+}
+@media (max-width:432px) {
     .turnDeviceNotification {
         background-image:url('../poze/mobile_rotate.jpeg');
         background-size:cover;
@@ -262,6 +241,7 @@ body{
       justify-content: center;
       width: 100%;
       display: flex;
+      height: 270px;
     }
     .PozaLogo{
         display: flex;
@@ -321,7 +301,6 @@ color: white;
         position: relative;
         width: 100%;
         height: 100%;
-        top: 3em;
         font-family: montserrat;
     }
     .overview_1_Text{
@@ -331,12 +310,12 @@ color: white;
         align-items: center;
         flex-direction: column;
         font-size: 0.8em;
-        position: absolute;
+        position: relative;
         width: fit-content;
        
     }
     .line{
-        position:absolute;
+        position:relative;
         width: 50px;
         height: 1px;
         background-color: rgb(99, 99, 99);
@@ -348,7 +327,7 @@ color: white;
         font-size: 1em;
         display: flex;
         flex-direction: column;
-        position:absolute;
+        position:relative;
         width: 75%;
         top:200%;
         text-align:justify;
@@ -357,7 +336,7 @@ color: white;
         display: flex;
         font-weight: bolder;
         flex-direction: column;
-        position:absolute;
+        position:relative;
         height: fit-content;
         width: 100%;
         top:100%;
@@ -387,7 +366,7 @@ color: white;
     .overview_3{
         display: flex;
         flex-direction: column;
-        position:absolute;
+        position:relative;
         height: fit-content;
         width: 100%;
         top:190%;
@@ -426,8 +405,8 @@ color: white;
         height: 10%;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        top: 270%;
+        position: relative;
+        bottom: 0%;
         padding-top: 1%;
     }
     .text_footer{
