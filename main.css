@@ -54,13 +54,22 @@
 .PrimaPoza{
   justify-content: center;
   display: flex;
+  position: relative;
+  align-items: flex-start;
+  width: 100%;
+  height: 850px;
+}
+.PrimaPoza img {
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    
 }
 .TextPoza{
     color: white;
     width: fit-content;
-    display: flex;
-    position: absolute;
-    top:50%;
+    text-align: center;
     font-size: 28px;
     font-family: Chopin;
 }
@@ -73,8 +82,7 @@
     display: flex;
     flex-direction: row;
     width:fit-content;
-    left:28%;
-  
+    left: 24%;  
 }
 
 .TopMenu l a{
@@ -90,23 +98,24 @@
 }
 .overview_1{
     display: flex;
-  
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
     height: 100%;
-    top: 5em;
+    
 }
 .overview_1_Text{
     display: flex;
     flex-direction: column;
     font-family: Chopin;
     font-size: 1.5em;
-    position: absolute;
+    position: relative;
     top:100%;
 }
 .line{
-    position:absolute;
+    position:relative;
     width: 50px;
     height: 1px;
     background-color: rgb(99, 99, 99);
@@ -117,7 +126,7 @@
     font-size: 1em;
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position:relative;
     width: 50%;
     top:200%;
     text-align:center;
@@ -125,7 +134,7 @@
 
 .overview_2{
     display: flex;
-    position:absolute;
+    position:relative;
     height: fit-content;
     width: 100%;
     top:180%;
@@ -152,7 +161,7 @@
 }
 .overview_3{
     display: flex;
-    position:absolute;
+    position:relative;
     height: fit-content;
     width: 100%;
     top:220%;
