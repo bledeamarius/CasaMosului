@@ -10,7 +10,9 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
   // Center the full-size image
-  document.getElementById("fullImg").classList.add("centered-image");
+  // document.getElementById("fullImg").classList.add("centered-image");
+  document.querySelector(".prev").style.display = "inline"
+  document.querySelector(".next").style.display = "inline"
 }
 
 function showSlides(n) {
@@ -32,7 +34,7 @@ function showSlides(n) {
 }
 
 function closeFullImg() {
-    document.getElementById("fullImgBox").style.display = "none";
+    document.getElementById("fullImg").style.display = "none";
     // ... other code ...
 
     // Remove the centering class
@@ -40,3 +42,12 @@ function closeFullImg() {
 }
 
 
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'ArrowRight') {
+    // Trigger the next slide
+    plusSlides(1);
+  } else if (event.key === 'ArrowLeft') {
+    // Trigger the previous slide
+    plusSlides(-1);
+  }
+});

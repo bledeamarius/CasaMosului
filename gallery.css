@@ -18,49 +18,9 @@
     width: 100px;
     height: 2px;
     background-color: rgb(99, 99, 99);
-    top: 200%;
     margin-bottom: 4%;
 }
-.img-gallery{
-    width: 80%;
-    margin:10% auto 5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-}
-.img-gallery img{
-    width: 100%;
-    cursor: pointer;
-}
-.img-gallery img:hover{
-    transform: scale(1.2);
-}
-.full-img{
-    width: 86%;
-    height: 100vh;
-    background: rgb(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-}
-.full-img img{
-    width: 60%;
-    
-}
-.full-img span{
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    font-family: sans-serif;
-    font-weight:200;
-    font-size: 1.5em ;
-    color: white;
-    cursor: pointer;
-}
+
 .Footer_galerie{
     font-family: Chopin;
     display: flex;
@@ -139,19 +99,6 @@
         text-align: center;
         width: fit-content;
     }
-    .img-gallery{
-        width: 80%;
-        display: flex;
-
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .img-gallery img{
-        width: 40%;
-        cursor: pointer;
-    }
     .Footer_galerie{
         font-family: montserrat;
         bottom: 0;
@@ -164,20 +111,8 @@
     .copyright_galerie{
         font-size: 0.5em;
     }
-    .full-img img{
-        width: 80%;
-        
-    }
-    .full-img span{
-        position: relative;
-        top: 5%;
-        right: 5%;
-        font-family: sans-serif;
-        font-weight:200;
-        font-size: 1.5em ;
-        color: white;
-        cursor: pointer;
-    }
+
+   
 }
 
 /* slideshow */
@@ -192,7 +127,7 @@
   
   img {
     vertical-align: middle;
-    width: 40%;
+    width: 80%;
   }
   
   /* Position the image container (needed to position the left and right arrows) */
@@ -214,20 +149,29 @@
   }
   
   /* Next & previous buttons */
-  .prev,
-  .next {
+  .prev {
     cursor: pointer;
-    position: absolute;
-    top: 40%;
+    position: relative;
     width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    margin-left: 15%;
+    display: none;
+  }
+  .next {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: 60%;
+    display: none;
   }
   
   /* Position the "next button" to the right */
@@ -239,7 +183,7 @@
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0);
   }
   
   /* Number text (1/3 etc) */
@@ -255,7 +199,6 @@
   .caption-container {
     text-align: center;
     background-color: #222;
-    padding: 2px 16px;
     color: white;
   }
   
