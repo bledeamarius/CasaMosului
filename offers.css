@@ -1,7 +1,7 @@
 .offers_1{
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     top: 20%;
@@ -10,7 +10,7 @@
 }
 .titlu_offers{
     display: flex;
-    position: absolute;
+    position: relative;
     width: fit-content;
     font-family: Chopin;
     font-size: 2em;
@@ -31,10 +31,9 @@ body {
 .accomodation{
     display: flex;
     width: 90%;
-    position: absolute;
+    position: relative;
     justify-content: space-evenly;
     align-items: center;
-    top:50%;
     background-color: white;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -42,7 +41,7 @@ body {
 }
 .poza_fundal_acc{
     display: flex;
-    width: 30%;
+    width: 50%;
     opacity:0.9;
     position: relative;
     justify-content: center;
@@ -53,14 +52,14 @@ body {
     font-family: Chopin;
     font-size: 2.5em;
     font-weight:950;
-    position: absolute;
+    position: relative;
     width: fit-content;
     color: rgb(255, 255, 255);
     
 }
 .line_acc{
     padding-right: 1px;
-    position: absolute;
+    position: relative;
     height: 90%;
     background-color: rgba(0, 0, 0, 0.353);
 }
@@ -75,10 +74,9 @@ body {
 }
 .linie_mijloc{
     padding-top: 1px;
-    position: absolute;
+    position: relative;
     width: 10%;
     background-color: rgba(0, 0, 0, 0.358);
-    top:115%;
 }
 .food_ALL{
     display: flex;
@@ -87,10 +85,9 @@ body {
 .food{
     display: flex;
     width: 90%;
-    position: absolute;
+    position: relative;
     justify-content: space-evenly;
     align-items: center;
-    top:125%;
     background-color: white;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -103,12 +100,11 @@ body {
     font-size: 1.2em;
     font-family: Chopin;
     font-weight: bold;
-    position: relative;
-    
+    position: relative; 
 }
 .food_linie{
     padding-right: 1px;
-    position: absolute;
+    position: relative;
     height: 90%;
     background-color: rgba(0, 0, 0, 0.353);
 }
@@ -118,14 +114,12 @@ body {
     opacity:0.6;
     align-items: center;
     justify-content: center;
-    
-    
 }
 .text_poza_food{
     font-family: Chopin;
     font-size: 2.5em;
     font-weight:990;
-    position: absolute;
+    position: relative;
     width: fit-content;
     color: rgb(255, 255, 255);
     
