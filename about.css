@@ -93,8 +93,6 @@
     width: 25%;
     text-align: justify;
     font-weight: bold;
-
-    
 }
 .line_where{
     display: flex;
@@ -107,6 +105,10 @@
     width: 25%;
     font-weight: bold;
     
+}
+.location_info ul {
+    text-decoration: none;
+    color: inherit;
 }
 .map {
     width: 60%;
